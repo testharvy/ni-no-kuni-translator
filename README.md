@@ -1,2 +1,2 @@
 # ni-no-kuni-translator
-Переводчик для игры Ni No Kuni
+Переводчик насканских текстов для игры Ni No Kuni

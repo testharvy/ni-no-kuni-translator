@@ -1,0 +1,31 @@
+.wrapper{
+    max-width: 1280px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
+.button{
+    border: 1px solid  #888888;
+    border-radius: 5px;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50px;
+    display: inline-block;
+}
+.button:hover{
+    border: 1px solid  #880000;
+}
+
+@media screen and (max-width: 767px){
+    .charField{
+        gap: 0.5rem;
+    }
+    .button{
+        height: 54px;
+        line-height: 54px;
+    }
+}

@@ -1,0 +1,302 @@
+.charWrapper{
+    display: inline-block;
+    cursor: pointer;
+}
+.charWrapper:hover .char{
+    border-color:  #880000;
+}
+.char{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url("/alphabet.jpg");
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #888888;
+    flex-shrink: 0;
+}
+
+/*классы кириллицей что бы без оверинжиниринга */
+.а{
+    background-position: 544px -80px;
+}
+.б{
+    background-position: 460px -80px;
+}
+.в{
+    background-position: 380px -80px;
+}
+.г{
+    background-position: 305px -80px;
+}
+.д{
+    background-position: 220px -80px;
+}
+.е{
+    background-position: 135px -80px;
+}
+
+.ж{
+    background-position: 544px -197px;
+}
+.з{
+    background-position: 460px -197px;
+}
+.и{
+    background-position: 380px -197px;
+}
+.й{
+    background-position: 305px -197px;
+}
+.к{
+    background-position: 220px -197px;
+}
+.л{
+    background-position: 135px -197px;
+}
+
+.м{
+    background-position: 544px -312px;
+}
+.н{
+    background-position: 460px -312px;
+}
+.о{
+    background-position: 382px -312px;
+}
+.п{
+    background-position: 305px -312px;
+}
+.р{
+    background-position: 220px -312px;
+}
+.с{
+    background-position: 135px -312px;
+}
+
+.т{
+    background-position: 544px -426px;
+}
+.у{
+    background-position: 460px -426px;
+}
+.ф{
+    background-position: 380px -426px;
+}
+.х{
+    background-position: 298px -426px;
+}
+.ц{
+    background-position: 220px -426px;
+}
+.ч{
+    background-position: 135px -426px;
+}
+
+.ш{
+    background-position: 544px -544px;
+}
+.щ{
+    background-position: 470px -544px;
+}
+.ъ{
+    background-position: 398px -544px;
+}
+.ы{
+    background-position: 329px -544px;
+}
+.ь{
+    background-position: 248px -544px;
+}
+.э{
+    background-position: 186px -544px;
+}
+.-{
+    background-position: 128px -536px;
+}
+
+.ю{
+    background-position: 544px -663px;
+}
+.я{
+    background-position: 460px -663px;
+}
+.1{
+    background-position: 380px -663px;
+}
+.2{
+    background-position: 295px -663px;
+}
+.3{
+    background-position: 220px -663px;
+}
+.4{
+    background-position: 135px -663px;
+}
+
+.5{
+    background-position: 544px -781px;
+}
+.6{
+    background-position: 460px -781px;
+}
+.7{
+    background-position: 380px -781px;
+}
+.8{
+    background-position: 295px -781px;
+}
+.9{
+    background-position: 214px -781px;
+}
+.0{
+    background-position: 136px -781px;
+}
+
+
+@media screen and (max-width: 767px){
+    .char{
+        width: 35px;
+        height: 35px;
+        background-image: url("/alphabet.jpg");
+        background-size: 654px 460px;
+        border-radius: 5px;
+        flex-shrink: 0;
+    }
+
+    .а{
+        background-position: 272px -40px;
+    }
+    .б{
+        background-position: 230px -40px;
+    }
+    .в{
+        background-position: 190px -40px;
+    }
+    .г{
+        background-position: 152px -40px;
+    }
+    .д{
+        background-position: 110px -40px;
+    }
+    .е{
+        background-position: 67px -40px;
+    }
+
+    .ж{
+        background-position: 272px -97px;
+    }
+    .з{
+        background-position: 230px -97px;
+    }
+    .и{
+        background-position: 190px -97px;
+    }
+    .й{
+        background-position: 152px -97px;
+    }
+    .к{
+        background-position: 110px -97px;
+    }
+    .л{
+        background-position: 67px -97px;
+    }
+
+    .м{
+        background-position: 272px -156px;
+    }
+    .н{
+        background-position: 230px -156px;
+    }
+    .о{
+        background-position: 190px -156px;
+    }
+    .п{
+        background-position: 152px -156px;
+    }
+    .р{
+        background-position: 110px -156px;
+    }
+    .с{
+        background-position: 67px -156px;
+    }
+
+    .т{
+        background-position: 272px -213px;
+    }
+    .у{
+        background-position: 230px -213px;
+    }
+    .ф{
+        background-position: 190px -213px;
+    }
+    .х{
+        background-position: 152px -213px;
+    }
+    .ц{
+        background-position: 110px -213px;
+    }
+    .ч{
+        background-position: 67px -213px;
+    }
+
+    .ш{
+        background-position: 272px -272px;
+    }
+    .щ{
+        background-position: 235px -272px;
+    }
+    .ъ{
+        background-position: 199px -272px;
+    }
+    .ы{
+        background-position: 164px -272px;
+    }
+    .ь{
+        background-position: 124px -272px;
+    }
+    .э{
+        background-position: 93px -272px;
+    }
+    .-{
+        background-position: 64px -269px;
+    }
+
+    .ю{
+        background-position: 272px -331px;
+    }
+    .я{
+        background-position: 230px -331px;
+    }
+    .1{
+        background-position: 190px -331px;
+    }
+    .2{
+        background-position: 152px -331px;
+    }
+    .3{
+        background-position: 110px -331px;
+    }
+    .4{
+        background-position: 67px -331px;
+    }
+
+    .5{
+        background-position: 272px -390px;
+    }
+    .6{
+        background-position: 232px -390px;
+    }
+    .7{
+        background-position: 190px -390px;
+    }
+    .8{
+        background-position: 146px -390px;
+    }
+    .9{
+        background-position: 107px -390px;
+    }
+    .0{
+        background-position: 68px -390px;
+    }
+}
