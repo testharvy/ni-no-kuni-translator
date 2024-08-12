@@ -18,7 +18,13 @@
     opacity: 0.3;
     border-radius: 5px;
 }
-
+.lastIndexClick{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
 
 .cursor{
     height: 70px;
@@ -57,5 +63,9 @@
         display: inline-block;
         animation: blink 1s infinite;
         position: relative;
+    }
+    .lastIndexClick{
+        width: 35px;
+        height: 35px;
     }
 }

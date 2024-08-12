@@ -72,7 +72,7 @@ function App() {
                 <Book/>
             :
                 <>
-                    <Preview textArray={textArray} textIndex={index} insertMode={insertMode}></Preview>
+                    <Preview textArray={textArray} textIndex={index} setTextIndex={(i)=>setIndex(i)} insertMode={insertMode}></Preview>
                     {index}
                     <Alphabet setChar={setChar} ></Alphabet>
                     <Controls clearTextArray={clearTextArray} deleteChar={deleteChar} prev={prev} next={next} mode={insertMode} setMode={setInsertMode}></Controls>
