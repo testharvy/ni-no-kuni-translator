@@ -1,12 +1,9 @@
 .wrapper{
+    padding: 5px;
     cursor: pointer;
     /*border: 1px solid #888888;*/
     border-radius: 5px;
     display: inline-block;
-    padding: 5px;
-    position: fixed;
-    top: 5px;
-    left: 5px;
 }
 .active{
     color: red;
@@ -14,4 +11,37 @@
     border-radius: 5px;
     display: inline-block;
     padding: 5px;
+}
+.textWrapper{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.text{
+    display: block;
+    line-height: 20px
+}
+.toggle{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+    width: 20px;
+    height: 40px;
+    border: 1px solid #888888;
+    position: relative;
+}
+.on,
+.off{
+    position: absolute;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    left: 5px;
+    border: 2px solid #888888;
+}
+.on{
+    top: 5px;
+}
+.off{
+    bottom: 5px;
 }

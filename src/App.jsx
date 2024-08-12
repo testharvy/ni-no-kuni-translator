@@ -11,10 +11,15 @@ function App() {
     const [textArray, setTextArray] = useState([]);
     const [index, setIndex] = useState(0);
     const [showBook, setShowBook] = useState(false);
+    const [insertMode, setInsertMode] = useState(true);
 
     const setChar = (char) =>{
         const newTextArray = [...textArray];
-        newTextArray[index] = char;
+        if(insertMode){
+            newTextArray[index] = char;
+        }else{
+            newTextArray.splice(index, 0, char);
+        }
         setTextArray(newTextArray);
         const newIndex = index+1;
         setIndex(newIndex);
@@ -25,13 +30,22 @@ function App() {
         setIndex(0);
     }
 
-    const deleteLastChar = () => {
-        if(index>0){
-            const newTextArray = [...textArray].slice(0,-1)
-            setTextArray(newTextArray);
-            console.log(newTextArray)
-            const newIndex = index-1;
-            setIndex(newIndex);
+    const deleteChar = () => {
+        if(insertMode && index!== textArray.length){
+            if(textArray.length>0){
+                const newTextArray = [...textArray]
+                newTextArray.splice(index,1)
+                setTextArray(newTextArray);
+            }
+        }else{
+            if(index !== 0){
+                const newTextArray = [...textArray]
+                newTextArray.splice(index-1,1)
+                setTextArray(newTextArray);
+                const newIndex = index-1;
+                setIndex(newIndex);
+            }
+
         }
     }
 
@@ -51,14 +65,17 @@ function App() {
 
     return (
         <div className='content'>
-            <ToggleSwitch value={showBook} setValue={setShowBook} textOn={'книга'} textOff={'ввод'}/>
+            <div className='book_switch'>
+                <ToggleSwitch value={showBook} setValue={setShowBook} textOn={'Книга'} textOff={'Ввод'}/>
+            </div>
             { showBook ?
                 <Book/>
             :
                 <>
-                    <Preview textArray={textArray} textIndex={index}></Preview>
+                    <Preview textArray={textArray} textIndex={index} insertMode={insertMode}></Preview>
+                    {index}
                     <Alphabet setChar={setChar} ></Alphabet>
-                    <Controls clearTextArray={clearTextArray} deleteLastChar={deleteLastChar} prev={prev} next={next}></Controls>
+                    <Controls clearTextArray={clearTextArray} deleteChar={deleteChar} prev={prev} next={next} mode={insertMode} setMode={setInsertMode}></Controls>
                 </>
             }
         </div>

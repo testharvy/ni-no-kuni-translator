@@ -1,19 +1,18 @@
 import Char from "../char/char.jsx";
 import styles from "./preview.module.css";
 
-function Preview({textArray, textIndex}) {
+function Preview({textArray, textIndex, insertMode}) {
     const reverseText = textArray.slice().reverse()
 
     return (
         <div className={styles.wrapper}>
-            <div className={styles.charWrapper}>
+            <span className={insertMode && styles.insertMode}>
                 {textArray.map((char, charIndex)=> <>
                     {textIndex===charIndex  && <div className={styles.cursor}></div>}
                     <Char key={charIndex} char={char}/>
                 </>)}
-
-                {textIndex===textArray.length && <div className={styles.cursor}></div>}
-            </div>
+            </span>
+            {textIndex===textArray.length && <div className={styles.cursor}></div>}
             <div>
                 {reverseText}
             </div>

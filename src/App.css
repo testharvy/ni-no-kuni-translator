@@ -59,6 +59,12 @@ table {
   padding: 1.5em;
 }
 
+.book_switch{
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+
 @media screen and (max-width: 767px){
   #root {
     padding: 4rem 0;
