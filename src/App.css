@@ -45,12 +45,12 @@ table {
 
 
 #root {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 3rem 0;
   text-align: center;
   background: #f1e3bf;
-  min-height: calc(100vh - 4rem);
+  min-height: calc(100vh - 6rem);
 }
 
 
@@ -61,8 +61,8 @@ table {
 
 @media screen and (max-width: 767px){
   #root {
-    padding: 1rem 0;
-    min-height: calc(100vh - 2rem);
+    padding: 4rem 0;
+    min-height: calc(100vh - 8rem);
   }
   .logo {
     height: 3em;

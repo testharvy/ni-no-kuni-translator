@@ -1,0 +1,17 @@
+.wrapper{
+    cursor: pointer;
+    /*border: 1px solid #888888;*/
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+.active{
+    color: red;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+}

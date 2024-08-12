@@ -1,0 +1,9 @@
+.book_wrapper{
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+.book{
+    max-width: 1308px;
+    max-height: 920px;
+}
