@@ -2,3 +2,18 @@
     border-bottom: 1px solid #888888;
     min-height: 100px;
 }
+
+.cursor{
+    height: 70px;
+    width: 1px;
+    margin: 0 5px;
+    background: #888888;
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 0}
+    49%{opacity: 0}
+    50% {opacity: 1}
+}

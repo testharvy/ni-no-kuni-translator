@@ -35,6 +35,20 @@ function App() {
         }
     }
 
+    const prev = () => {
+        if(index>0){
+            const newIndex = index-1;
+            setIndex(newIndex);
+        }
+    }
+    const next = () => {
+        if(index<textArray.length){
+            const newIndex = index+1;
+            setIndex(newIndex);
+        }
+    }
+
+
     return (
         <div className='content'>
             <ToggleSwitch value={showBook} setValue={setShowBook} textOn={'книга'} textOff={'ввод'}/>
@@ -44,7 +58,7 @@ function App() {
                 <>
                     <Preview textArray={textArray} textIndex={index}></Preview>
                     <Alphabet setChar={setChar} ></Alphabet>
-                    <Controls clearTextArray={clearTextArray} deleteLastChar={deleteLastChar}></Controls>
+                    <Controls clearTextArray={clearTextArray} deleteLastChar={deleteLastChar} prev={prev} next={next}></Controls>
                 </>
             }
         </div>

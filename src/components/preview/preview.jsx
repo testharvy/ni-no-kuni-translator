@@ -7,7 +7,12 @@ function Preview({textArray, textIndex}) {
     return (
         <div className={styles.wrapper}>
             <div className={styles.charWrapper}>
-                {textArray.map((char, charIndex)=> <Char key={charIndex} char={char}/>)}
+                {textArray.map((char, charIndex)=> <>
+                    {textIndex===charIndex  && <div className={styles.cursor}></div>}
+                    <Char key={charIndex} char={char}/>
+                </>)}
+
+                {textIndex===textArray.length && <div className={styles.cursor}></div>}
             </div>
             <div>
                 {reverseText}
